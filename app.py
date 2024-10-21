@@ -13,7 +13,7 @@ def load_model():
     model.classifier[1] = nn.Linear(model.classifier[1].in_features, 2)
     
     # Load saved weights
-    model.load_state_dict(torch.load('trained_model.pth', map_location=torch.device('cpu')))
+    model.load_state_dict(torch.load('trained_model3.pth', map_location=torch.device('cpu')))
     model.eval()
     return model
 
